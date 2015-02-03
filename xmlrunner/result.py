@@ -77,6 +77,9 @@ class _TestInfo(object):
                     self.err, test_method)
         )
 
+        # The method is used by external tools to generate improved reports.
+        self.test_method = test_method
+
         self.test_name = testcase_name(test_method)
         self.test_id = test_method.id()
 
